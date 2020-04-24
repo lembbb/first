@@ -1,0 +1,462 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    min-height: 500px;
+    background: url(../bomj_pics/background_menu.jpg);
+    /* background-position-y: -165px; */
+    background-size: cover;
+    position: relative;
+}
+
+#logo1 img {
+    display: block;
+    height: 18vh;
+    width: 18vh;
+}
+
+.main-zalivka {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
+    background-image: linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(85, 69, 226) 100%);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 90%;
+    position: relative;
+    z-index: 10;
+}
+
+.menu {
+    width: 60%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-btn {
+    margin-left: -20px;
+    border: 1px solid white;
+    padding: 10px 45px;
+    border-radius: 30px;
+}
+
+.reg-btn {
+    /* border: 1px solid white;
+    width: 136px;
+
+    display: block;
+    text-align: center; */
+    margin-left: 10px;
+    border: 1px solid white;
+    padding: 10px 45px;
+    border-radius: 30px;
+
+}
+
+.main-text {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+
+
+.main-text h1 {
+    display: inline-block;
+    font-size: 60px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.main-text h1::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.main-text h1::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.down-arrow {
+    display: flex;
+    height: 20vh;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+/* !!!!!!!!! BOX SHADOW для тексту */
+
+    /* box-shadow: 0px 0px 0px 20px 3px rgba(204, 204, 220, 0.5); */
+}
+
+.down-arrow a {
+    display: block;
+    font-size: 8vh;
+    text-decoration: none;
+    color: #fff;
+    z-index: 5;
+}
+
+.login-block {
+    display: flex;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+
+.login-reg-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* !!!!!!!!!!!! ЗАПИТАТИ, як додавати декілька класів, щоб не дублювати, як нижче два */
+
+.login-reg-form input {
+    display: flex;
+    margin: 3px;
+}
+
+.login-reg-form select {
+    display: flex;
+    margin: 3px;
+}
+
+.flex-checkbox {
+    display: flex;
+    margin: 3px;
+    align-items: flex-end;
+}
+
+/* .reg-checkbox {
+    display: flex;
+    margin: 3px;
+} */
+
+
+
+/* PRICE */
+
+.price-tag-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 250, 253);
+
+}
+
+.price-tags {
+   display: flex;
+   justify-content: space-evenly;
+   width: 90%;
+   min-height: 400px;
+   
+}
+
+.price-tag img {
+    display: inline-block;
+    height: 70px;
+}
+
+.price-tag {
+    box-shadow: 0 0 25px rgba(0,0,0,0.18);
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    transition: 0.3s;
+}
+
+.price-tag:hover {
+    cursor: pointer;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 30px rgba(114, 75, 189, 0.596);
+}
+
+/* !!!!!! по центру? !!!!!! */
+
+/* .price-btn {
+    display: flex;
+    align-items: center;
+} */
+
+.reviews {
+    min-height: 500px;
+    background: linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(85, 69, 226) 100%);
+    color: #fff;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.reviews img {
+    max-height: 150px;
+    /* float: left; */
+    border-radius: 10px;
+}
+
+/* blockquote зробити WRAPами ту фігню */
+
+blockquote {
+    border: 1px solid rgb(202, 202, 202);
+    background: linear-gradient( 150deg, rgba(180, 44, 146, 0.26) 0%, rgba(85, 69, 226, 0.199) 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.18);
+    max-width: 700px;
+}
+
+.reviews-names {
+    display: block;
+    margin: 15px auto 0px 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.reviews-skills {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+
+.blockquote-review {
+    display: flex;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+.blockquote-review p {
+    margin: 0px auto 0px 20px;
+    /* background: url(../bomj_pics/comments-background.png); */
+    /* чому свг не працює? */
+    background: rgba(211, 211, 211, 0.295);
+    border-radius: 10px;
+    padding: 1%;
+    font-style: italic;
+    font-weight: lighter;
+    width: 81%;
+}
+
+/* .blockquote-review p:before {
+    content: '"';
+} */
+
+.ourteam-container {
+    min-height: 650px;
+    background: linear-gradient( 150deg, rgba(136, 211, 206, 0.582) 0%, rgba(226, 69, 174, 0.575) 100%);
+    color: #fff;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.ourteam-container-main {
+    width: 1200px;
+}
+
+.ourteam-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ourteam-container li {
+    
+    min-width: 210px;
+    /* height: 195px; */
+    /* background: whitesmoke; */
+    /* border: 1px solid black; */
+    list-style: none;
+    margin: 0px 54px 54px 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourteam-container li img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 11px -5px rgb(0, 0, 0);
+
+}
+
+.ourteam-container h4 {
+    margin: 13px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.ourteam-container span {
+    font-variant: all-petite-caps;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ourteam-container h5 {
+    margin: 50px 0px 50px 0px;
+  
+}
+
+footer {
+    /* max-height: 300px;
+    min-height: 200px; */
+    background: linear-gradient( 150deg, rgba(141, 136, 211, 0.938) 0%, rgba(26, 7, 19, 0.575) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h6 {
+    margin: 30px 0px 30px 10%;
+    font-weight: 300;
+}
+
+footer span {
+    font-weight: 300;
+}
+
+.social-links {
+    margin: 0px 10% 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0px 0px 12px;
+    align-items: center
+}
+
+.social-links a svg {
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .main-text h1 {
+        font-size: 35px;
+    }
+
+    .main-text p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 19px;
+    }
+
+    .price-tags {
+        flex-direction: column;
+        
+    }
+    .price-tag {
+        max-width: 100%;
+        margin-bottom: 25px
+    }
+    .ourteam-container ul {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        justify-content: center;
+    }
+    #logo1 img {
+        height: 20vh;
+        width: 20vh;
+    }
+}
